@@ -6,7 +6,7 @@ import GoldenCityLogo from '../../Assets/Sample Logo.svg'
 
 const Navbar = () => {
 
-  const [activeItem, setActiveItem] = useState(null)
+  const [activeItem, setActiveItem] = useState('/')
   
 
 
@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className='fixed top-0 bg-white flex w-full h-[100px] border-b border-black items-center space-x-[38rem]'>
+    <nav className=' fixed top-0 z-20 bg-white flex w-[1680px] h-[100px] border-b border-black items-center space-x-[560px]'>
       <img src={GoldenCityLogo} alt='Golden-City' className='w-[199px] h-8 ml-14'/>
       <ul className='flex space-x-14'>
         {navItems.map(item => (
@@ -35,15 +35,18 @@ const Navbar = () => {
           className={`cursor-pointer font-poppins whitespace-nowrap ${
             activeItem === item.path
             ? 'text-[#753FF6] font-bold font-poppins text-[30px]'
-            : ' text-[#753FF6] font-normal font-poppins text-[30px]'
+            : ' text-[#753FF6] font-medium font-poppins text-[30px]'
           }`}
           >
-          <Link to={item.path}>{item.label}</Link>
+          <Link 
+            to={item.path} 
+            className=' '>
+            {item.label}
+          </Link>
 
           </li>
         ))}
       </ul>
-
     </nav>
     </>
   );

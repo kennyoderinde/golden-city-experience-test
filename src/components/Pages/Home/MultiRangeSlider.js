@@ -9,7 +9,7 @@ const formatCurrency = (value) => {
 
 const MultiRangeSlider = ({ values, onChange }) => {
   return (
-    <div className="my-4 w-438px h-10">
+    <div className="my-6 w-438px h-10">
       <Slider
         range
         min={0}

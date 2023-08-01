@@ -22,7 +22,7 @@ const LocationInput = () => {
         onChange={handleInputChange}
         placeholder="Enter Location"
         required
-        className=" w-438px h-42px bg-[#F4F4F4] rounded-2xl mt-7 pl-8 font-poppins outline-none" style={{ boxShadow: '0 0 0px rgba(0, 0, 0, 0.2)' }}
+        className=" w-438px h-42px bg-[#F4F4F4] rounded-2xl mt-6 pl-8 font-poppins outline-none" style={{ boxShadow: '0 0 0px rgba(0, 0, 0, 0.2)' }}
       />
       <button type="submit"></button>
     </form>

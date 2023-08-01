@@ -35,6 +35,7 @@ module.exports = {
         '440px' : '440px', //testimonials
         '180px' : '180px' , //testimonials btn
         '300px' : '300px', //footer underline
+        '1680px': '1680px',  //navbar width
 
 
       },
@@ -65,11 +66,10 @@ module.exports = {
       },
 
       spacing: {
-        '27rem': '27rem', // space btw golden logo and nav items 
+        '23rem': '23rem', // space btw golden logo and nav items 
         '38rem': '38rem',
         '116px': '116px',
-
-        
+        '560px': '560px',
       },
     },
   },
