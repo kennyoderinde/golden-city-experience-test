@@ -37,7 +37,7 @@ const Home = () => {
   return (
     <>
     <div className='mt-24'>
-      <div className='w-[1680px] h-screen border border-red-400'>
+      <div className='w-[full] h-screen border border-red-400'>
         <img src={HomeBgImg} alt=''className=' w-full  '/>
 
         <div className=' -mt-38rem ml-20 text-white font-poppins flex flex-col space-y-5 mb-20'>

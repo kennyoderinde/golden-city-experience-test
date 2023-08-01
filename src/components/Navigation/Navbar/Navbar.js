@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className=' fixed top-0 z-20 bg-white flex w-[1680px] h-[100px] border-b border-black items-center space-x-[560px]'>
+    <nav className=' fixed top-0 z-20 bg-white flex w-full h-[100px] border-b border-black items-center space-x-[38rem]'>
       <img src={GoldenCityLogo} alt='Golden-City' className='w-[199px] h-8 ml-14'/>
       <ul className='flex space-x-14'>
         {navItems.map(item => (
