@@ -118,17 +118,21 @@ const RecentlyAdded = () => {
 
     ]
   return (
-    <div className='flex flex-col space-y-3'>
-        <div className=' flex  font-poppins justify-evenly space-x-[35rem] '>
+    <>
+    <div className=''>
+        <div className=' flex  font-poppins justify-between mb-28 mr-28 ml-28  '>
             <p className=' text-4xl font-semibold '>Recently Added</p>
             <span className=' text-2xl text-[#753FF6] font-semibold '>See all</span>
         </div>
-        <ul className=' flex w-10/12 flex-wrap m-auto justify-center'>
+
+
+        <div className='flex items-center justify-center h-screen'>
+        <ul className='border border-red-400 container grid grid-cols-2 gap-14 max-w-[92.2rem]'>
             {
                 RecentAdded_.map(item => (
                     <li 
                     key={item.id} 
-                    className=' w-705px h-249px border border-gray-400 flex justify-center m-5 rounded-xl 'style={{ boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)' }} 
+                    className=' w-[44.0625rem] h-[15.5625rem] border border-gray-400 flex justify-center m-5 rounded-xl 'style={{ boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)' }} 
                     >
                         <div className='flex items-center ml-10 space-x-8 '>
                             <img src={item.img} alt='Recently Added Pic' className=' w-191px h-191px'/>
@@ -167,8 +171,9 @@ const RecentlyAdded = () => {
                 ))
             }
         </ul>
-        
+        </div>
     </div>
+    </>
   )
 }
 

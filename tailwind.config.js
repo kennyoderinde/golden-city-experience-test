@@ -28,7 +28,7 @@ module.exports = {
         '104px' : '104px',
         '429px' : '429px',  //Location section width 
         '150px' : '150px',  //Location section btn 
-        '705px' : '705px',   //recently added
+        '44.0625rem' : '44.0625rem',   //recently added
         '191px' : '191px',
         '121px' : '121px',
         '369px' : '369px',
@@ -48,7 +48,7 @@ module.exports = {
         '560px' : '560px',
         '380px' : '380px',
         '50px' : '50px',  //Location section btn
-        '249px' : '249px', //recently added
+        '15.5625rem' : '15.5625rem', //recently added
         '191px' : '191px',  //recently added img
         '41px' : '41px',
         '331px' : '331px',  //testimonial
@@ -75,6 +75,8 @@ module.exports = {
         '560px': '560px',
         '27rem': '27rem',
         '57rem': '57rem',
+        '50rem': '50rem',
+
 
 
 
