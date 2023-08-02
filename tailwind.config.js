@@ -68,8 +68,12 @@ module.exports = {
       spacing: {
         '23rem': '23rem', // space btw golden logo and nav items 
         '38rem': '38rem',
+        '49rem' : '49rem',   //recently added
         '116px': '116px',
         '560px': '560px',
+        '27rem': '27rem',
+
+
       },
     },
   },

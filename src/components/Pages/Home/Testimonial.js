@@ -43,7 +43,10 @@ const Testimonial = () => {
         </ul>
 
     </div>
-    <button className=' w-180px h-50px rounded-lg bg-[#753ff6] text-22px  text-white font-poppins flex justify-center items-center ml-auto mr-116px mb-10'>View more</button>
+
+    <div className= 'flex justify-end mr-44'>
+        <button className=' w-180px h-50px rounded-lg bg-[#753ff6] text-22px  text-white font-poppins flex justify-center items-center mr-116px mb-10'>View more</button>
+    </div>
     </>
   )
 }

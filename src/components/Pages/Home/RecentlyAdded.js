@@ -119,9 +119,9 @@ const RecentlyAdded = () => {
     ]
   return (
     <div className='flex flex-col space-y-3'>
-        <div className=' flex  font-poppins justify-between '>
-            <p className=' text-4xl font-semibold ml-28'>Recently Added</p>
-            <span className=' text-2xl text-[#753FF6] font-semibold mr-28'>See all</span>
+        <div className=' flex  font-poppins justify-evenly space-x-[49rem] '>
+            <p className=' text-4xl font-semibold '>Recently Added</p>
+            <span className=' text-2xl text-[#753FF6] font-semibold '>See all</span>
         </div>
         <ul className=' flex flex-wrap justify-center'>
             {
