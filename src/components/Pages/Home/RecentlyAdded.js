@@ -119,11 +119,11 @@ const RecentlyAdded = () => {
     ]
   return (
     <div className='flex flex-col space-y-3'>
-        <div className=' flex  font-poppins justify-evenly space-x-[49rem] '>
+        <div className=' flex  font-poppins justify-evenly space-x-[35rem] '>
             <p className=' text-4xl font-semibold '>Recently Added</p>
             <span className=' text-2xl text-[#753FF6] font-semibold '>See all</span>
         </div>
-        <ul className=' flex flex-wrap justify-center'>
+        <ul className=' flex w-10/12 flex-wrap m-auto justify-center'>
             {
                 RecentAdded_.map(item => (
                     <li 

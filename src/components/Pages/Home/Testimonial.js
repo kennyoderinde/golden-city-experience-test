@@ -27,7 +27,7 @@ const Testimonial = () => {
             <p className=' text-5xl text-[#753FF6] font-semibold'>Testimonials</p>
             <span className=' text-4xl leading-loose'>What our clients have to say</span>
         </div>
-        <ul className='flex mt-24 space-x-16'>
+        <ul className='flex mt-24 space-x-16 mb-12'>
             {TestimonialData_.map(value => (
                 <li 
                 key={value.id}
@@ -42,11 +42,13 @@ const Testimonial = () => {
             ))}
         </ul>
 
+        <div className= 'flex ml-auto mr-27rem '>
+         <button className=' w-180px h-50px rounded-lg bg-[#753ff6] text-22px  text-white font-poppins flex justify-center items-center mr-116px mb-10'>View more</button>
+        </div>
+
     </div>
 
-    <div className= 'flex justify-end mr-44'>
-        <button className=' w-180px h-50px rounded-lg bg-[#753ff6] text-22px  text-white font-poppins flex justify-center items-center mr-116px mb-10'>View more</button>
-    </div>
+    
     </>
   )
 }

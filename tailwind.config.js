@@ -53,7 +53,9 @@ module.exports = {
         '41px' : '41px',
         '331px' : '331px',  //testimonial
         '1520px' : '1520px', //footer underline
-        '70px' : '70px', //footer underline
+        '70px' : '70px',
+        '60%' : '60%', //footer socilais media
+        
 
         
       },
@@ -68,10 +70,12 @@ module.exports = {
       spacing: {
         '23rem': '23rem', // space btw golden logo and nav items 
         '38rem': '38rem',
-        '49rem' : '49rem',   //recently added
+        '35rem' : '35rem',   //recently added
         '116px': '116px',
         '560px': '560px',
         '27rem': '27rem',
+        '57rem': '57rem',
+
 
 
       },

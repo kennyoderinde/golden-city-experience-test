@@ -49,7 +49,7 @@ const Home = () => {
           </div>
 
             {/* note */}
-          <div className=' z-0 absolute left-64 w-[984px] h-[171px] bg-white shadow-md rounded-2xl flex flex-row ' style={{ boxShadow: '0 0 20px rgba(0, 0, 0, 0.2)' }}>
+          <div className=' z-0 relative left-20 w-[984px] h-[171px] bg-white shadow-md rounded-2xl flex flex-row ' style={{ boxShadow: '0 0 20px rgba(0, 0, 0, 0.2)' }}>
             
             {/* part one */}
             <div className='flex flex-col'>
@@ -128,7 +128,7 @@ const Home = () => {
 
 
 
-        <div className=' mt-23rem mb-10'>
+        <div className=' mt-48 mb-10'>
           <SuccessReport />
 
         </div>

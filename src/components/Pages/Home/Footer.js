@@ -20,7 +20,7 @@ const Footer = () => {
       </div>
 
     <div className='flex justify-center'>
-    <div className=' w-9/12 border-b border-gray-500 mb-10 flex justify-center'></div>
+    <div className=' w-[60%] border-b border-gray-500 mb-10 flex justify-center'></div>
     </div>
     <div className='flex flex-col justify-center items-center space-y-8 mb-24'>
         <div className=' w-300px h-70px bg-[#753FF6] flex space-x-6 justify-center items-center rounded-full'>
