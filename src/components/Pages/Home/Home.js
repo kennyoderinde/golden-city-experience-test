@@ -19,7 +19,7 @@ import Footer from './Footer'
 const Home = () => {
 
 // range slider state
-  const [range, setRange] = useState([20, 80]);
+  const [range, setRange] = useState([2600, 10000]);
  
   const handleSliderChange = (newRange) => {
     setRange(newRange);
@@ -89,7 +89,7 @@ const Home = () => {
 
 
               {/* Range input */}
-              <MultiRangeSlider values={range} onChange={handleSliderChange}  className=''/>
+              <MultiRangeSlider values={range} onChange={handleSliderChange} />
             
 
 
