@@ -36,9 +36,9 @@ const Home = () => {
 
   return (
     <>
-    <div className='mt-24'>
+    <div className=''>
       <div className=' flex justify-center'>
-        <div className='w-[1680px] h-full'>
+        <div className=' h-full'>
           <img src={HomeBgImg} alt=''className=' w-full h-full '/>
 
           <div className=' -mt-38rem ml-20 text-white font-poppins flex flex-col space-y-5 mb-20'>

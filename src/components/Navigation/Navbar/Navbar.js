@@ -25,30 +25,30 @@ const Navbar = () => {
 
   return (
     <>
-    <div className=' flex justify-center'>
-    <nav className=' fixed top-0 z-20 bg-white flex w-[1680px] h-[100px] border-b border-black items-center space-x-[38rem]'>
-      <img src={GoldenCityLogo} alt='Golden-City' className='w-[199px] h-8 ml-14'/>
-      <ul className='flex space-x-14'>
-        {navItems.map(item => (
-          <li 
-          key={item.id}
-          onClick={() => handleOptionClick(item.path)}
-          className={`cursor-pointer font-poppins whitespace-nowrap ${
-            activeItem === item.path
-            ? 'text-[#753FF6] font-bold font-poppins text-[30px]'
-            : ' text-[#753FF6] font-medium font-poppins text-[30px]'
-          }`}
-          >
-          <Link 
-            to={item.path} 
-            className=' '>
-            {item.label}
-          </Link>
+    <div class='fixed top-0 z-20 flex justify-center w-full'>
+      <div class='bg-white flex w-full md:max-w-[1680px] h-[100px] border-b border-black items-center md:space-x-[38rem]'>
+      <img src={GoldenCityLogo} alt='Golden-City' class='w-[199px] h-8 md:ml-14'/>
+        <ul className='flex space-x-14'>
+          {navItems.map(item => (
+            <li 
+            key={item.id}
+            onClick={() => handleOptionClick(item.path)}
+            className={`cursor-pointer font-poppins whitespace-nowrap ${
+              activeItem === item.path
+              ? 'text-[#753FF6] font-bold font-poppins text-[30px]'
+              : ' text-[#753FF6] font-medium font-poppins text-[30px]'
+            }`}
+            >
+            <Link 
+              to={item.path} 
+              className=' '>
+              {item.label}
+            </Link>
 
-          </li>
-        ))}
-      </ul>
-    </nav>
+            </li>
+          ))}
+        </ul>
+    </div>
     </div>
     </>
   );
