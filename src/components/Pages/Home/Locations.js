@@ -41,29 +41,31 @@ const Location = () => {
     },
     ]
   return (
-    <div className=' flex flex-col justify-center items-center mt-24 mb-12 '>
-      <div className=' font-poppins text-center '>
-        <p className=' text-5xl text-[#753FF6] font-semibold'>Our Locations</p>
-        <span className=' text-4xl leading-loose'>We are available in different cities across the country.</span>
-      </div>
-      <ul className=' flex mt-24 space-x-20 '>
-        {
-          LocationData_.map(elem => (
-            <li 
-              key={elem.id} 
-              className=''
-            >
-              <div className=' w-429px h-560px border border-[#989898] rounded-md'>
-              <img src={elem.img} alt='Location Image' className=" w-429px h-380px " />
-                <div>{elem.location}</div>
-                <button className='w-150px h-50px bg-[#753FF6] text-22px ml-auto mt-7 mr-5 text-white flex items-center justify-center rounded-lg' style={{ boxShadow: '0 0 0px rgba(0, 0, 0, 0.1)' }}>
-                  {elem.btn}</button>
-              </div>
+    <div className=' flex flex-col justify-center items-center h-screen w-12/12 border border-green-400 center mt-24 mb-12  '>
+      <div className='flex flex-col items-center mt-24 mb-12 max-w-[92.2rem] border border-red-400'>
+        <div className=' font-poppins text-center '>
+          <p className=' text-5xl text-[#753FF6] font-semibold'>Our Locations</p>
+          <span className=' text-4xl leading-loose'>We are available in different cities across the country.</span>
+        </div>
+        <ul className=' flex mt-24 space-x-20 '>
+          {
+            LocationData_.map(elem => (
+              <li 
+                key={elem.id} 
+                className=''
+              >
+                <div className=' w-429px h-560px border border-[#989898] rounded-md'>
+                <img src={elem.img} alt='Location Image' className=" w-429px h-380px " />
+                  <div>{elem.location}</div>
+                  <button className='w-150px h-50px bg-[#753FF6] text-22px ml-auto mt-7 mr-5 text-white flex items-center justify-center rounded-lg' style={{ boxShadow: '0 0 0px rgba(0, 0, 0, 0.1)' }}>
+                    {elem.btn}</button>
+                </div>
 
-            </li>
-          ))
-        }
-      </ul>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
     </div>
   )
 }
