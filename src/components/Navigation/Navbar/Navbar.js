@@ -26,8 +26,8 @@ const Navbar = () => {
   // md:space-x-[38rem]
   return (
     <>
-    <div class='fixed top-0 z-20 flex justify-center w-full'>
-      <div class='bg-white flex w-full max-w-[1680px] h-[100px] border-b border-black items-center space-x-38rem '>
+    <div class='bg-white fixed top-0 z-20 flex justify-center w-full h-[100px] border-b border-black px-4'>
+      <div class='flex  items-center justify-between  w-[90%] mx-auto '>
         <img src={GoldenCityLogo} alt='Golden-City' class='w-[199px] h-8 md:ml-14'/>
         <ul className='flex space-x-14'>
           {navItems.map(item => (

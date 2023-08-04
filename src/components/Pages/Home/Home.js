@@ -138,12 +138,12 @@ const Home = () => {
 
         </div>
 
-        <div className='mt-48'>
+        <div className='mt-28'>
           <RecentlyAdded />
 
         </div>
 
-        <div className='mt-28'>
+        <div className='mt-32'>
           <Testimonial />
 
         </div>

@@ -119,58 +119,61 @@ const RecentlyAdded = () => {
     ]
   return (
     <>
-    <div className=''>
-        <div className=' flex  font-poppins justify-between mb-28 mr-28 ml-28  '>
-            <p className=' text-4xl font-semibold '>Recently Added</p>
-            <span className=' text-2xl text-[#753FF6] font-semibold '>See all</span>
+    <div className=' mb-14'>
+        <div className='flex w-[88%]  mx-auto px-4'>
+            <div className=' flex w-full font-poppins  items-center justify-between mb-8   '>
+                <p className=' text-4xl font-semibold '>Recently Added</p>
+                <span className=' text-2xl text-[#753FF6] font-semibold '>See all</span>
+            </div>
         </div>
 
 
-        <div className='flex items-center justify-center h-screen'>
-        <ul className='border border-red-400 container grid grid-cols-2 gap-14 max-w-[92.2rem]'>
-            {
-                RecentAdded_.map(item => (
-                    <li 
-                    key={item.id} 
-                    className=' w-[44.0625rem] h-[15.5625rem] border border-gray-400 flex justify-center m-5 rounded-xl 'style={{ boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)' }} 
-                    >
-                        <div className='flex items-center ml-10 space-x-8 '>
-                            <img src={item.img} alt='Recently Added Pic' className=' w-191px h-191px'/>
-                            <div className=' font-poppins space-y-4'>
-                                <p className=' text-28px font-bold w-369px leading-snug'>{item.address}</p>
+        <div className=' border border-red-400 w-[92%] mx-auto'>
+            <ul className=' container grid grid-cols-2 gap-14 w-full max-w-[92.2rem] mx-auto'>
+                {
+                    RecentAdded_.map(item => (
+                        <li 
+                        key={item.id} 
+                        className=' w-[44.0625rem] h-[15.5625rem] border border-gray-400 flex justify-center rounded-xl '
+                        style={{ boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)' }} 
+                        >
+                            <div className='flex items-center space-x-8 '>
+                                <img src={item.img} alt='Recently Added Pic' className=' w-191px h-191px'/>
+                                <div className=' font-poppins space-y-4'>
+                                    <p className=' text-28px font-bold w-369px leading-snug'>{item.address}</p>
 
-                                <div className=' flex space-x-8  '>
-                                    <div className=' flex space-x-6 items-center'>
-                                        <div className=' w-11 h-11 border border-[#753ff6] rounded-full flex justify-center items-center'>
-                                            < img src= {item.bedIcon} alt='Icons' className=' w-6 h-6'/> 
+                                    <div className=' flex space-x-8  '>
+                                        <div className=' flex space-x-6 items-center'>
+                                            <div className=' w-11 h-11 border border-[#753ff6] rounded-full flex justify-center items-center'>
+                                                < img src= {item.bedIcon} alt='Icons' className=' w-6 h-6'/> 
+                                            </div>
+                                            <span className=' text-base text-gray-500 font-poppins font-medium '> {item.bedroom} </span>
                                         </div>
-                                        <span className=' text-base text-gray-500 font-poppins font-medium '> {item.bedroom} </span>
+
+                                        <div className=' flex space-x-6 items-center'>
+                                            <div className=' w-11 h-11 border border-[#753ff6] rounded-full flex justify-center items-center'>
+                                                < img src= {item.bathIcon} alt='Icons' className=' w-6 h-6'/>
+                                            </div>
+                                            <span className=' text-base text-gray-500 font-poppins font-medium '> {item.bathroom}</span>
+                                        </div>
                                     </div>
 
-                                    <div className=' flex space-x-6 items-center'>
-                                        <div className=' w-11 h-11 border border-[#753ff6] rounded-full flex justify-center items-center'>
-                                            < img src= {item.bathIcon} alt='Icons' className=' w-6 h-6'/>
+                                    <div className=' flex space-x-36  '>
+                                        <div className=' flex space-x-6 items-center'>
+                                            <div className=' w-11 h-11 border border-[#753ff6] rounded-full flex justify-center items-center'>
+                                                < img src= {item.toiletIcon} alt='Icons' className=' w-6 h-6'/>
+                                            </div>
+                                            <span className=' text-base text-gray-500 font-poppins font-medium '> {item.toilet}</span>
                                         </div>
-                                        <span className=' text-base text-gray-500 font-poppins font-medium '> {item.bathroom}</span>
+                                        
+                                        <button className=' w-121px h-41px rounded-lg bg-[#753ff6] text-white font-bold '>{item.btn}</button>
                                     </div>
-                                </div>
-
-                                <div className=' flex space-x-36  '>
-                                    <div className=' flex space-x-6 items-center'>
-                                        <div className=' w-11 h-11 border border-[#753ff6] rounded-full flex justify-center items-center'>
-                                            < img src= {item.toiletIcon} alt='Icons' className=' w-6 h-6'/>
-                                        </div>
-                                        <span className=' text-base text-gray-500 font-poppins font-medium '> {item.toilet}</span>
-                                    </div>
-                                    
-                                    <button className=' w-121px h-41px rounded-lg bg-[#753ff6] text-white font-bold '>{item.btn}</button>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                ))
-            }
-        </ul>
+                        </li>
+                    ))
+                }
+            </ul>
         </div>
     </div>
     </>
