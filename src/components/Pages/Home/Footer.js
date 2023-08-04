@@ -8,8 +8,8 @@ import Instagram from '../../Assets/instagram.svg'
 const Footer = () => {
   return (
     <>
-      <div className='flex justify-center -ml-[27rem]'>
-        <div className='flex space-x-48 mb-7'>
+      <div className='flex  border w-80% border-red-400 '>
+        <div className='flex  w-full space-x-48 mb-7'>
           <img src={GoldenCityLogo} alt='Golden-City' className='w-[199px] h-8 ml-14'/>
           <div className=' font-poppins font-bold text-4xl text-[#753FF6] flex space-x-32 '>
             <p className= ''>Contact us</p>
