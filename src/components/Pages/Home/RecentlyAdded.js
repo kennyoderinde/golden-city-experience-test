@@ -128,7 +128,7 @@ const RecentlyAdded = () => {
         </div>
 
 
-        <div className=' border border-red-400 w-[92%] mx-auto'>
+        <div className='  w-[92%] mx-auto'>
             <ul className=' container grid grid-cols-2 gap-14 w-full max-w-[92.2rem] mx-auto'>
                 {
                     RecentAdded_.map(item => (
