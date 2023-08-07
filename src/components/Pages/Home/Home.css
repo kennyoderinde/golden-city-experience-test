@@ -1,0 +1,17 @@
+/* .location {
+    height: 300px;
+    position: relative;
+  }
+  
+  .location::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#fff, #ccc);
+    z-index: -1;
+    clip-path: polygon(0 0, 100% 0, 100% 200px, 200px 200px, 200px 100%, 0 100%);
+  }
+   */

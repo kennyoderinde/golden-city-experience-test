@@ -36,7 +36,8 @@ module.exports = {
         '180px' : '180px' , //testimonials btn
         '300px' : '300px', //footer underline
         '1680px': '1680px',  //navbar width
-
+        '600px' : '600px', 
+        '602px' : '602px', 
 
       },
 
@@ -55,7 +56,9 @@ module.exports = {
         '1520px' : '1520px', //footer underline
         '70px' : '70px',
         '60%' : '60%', //footer socilais media
-        
+        '600px' : '600px', 
+        '602px' : '602px', 
+
 
         
       },

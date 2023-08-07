@@ -23,11 +23,10 @@ const Navbar = () => {
     setActiveItem(path)
   }
 
-  // md:space-x-[38rem]
   return (
     <>
     <div class='bg-white fixed top-0 z-20 flex justify-center w-full h-[100px] border-b border-black px-4'>
-      <div class='flex  items-center justify-between  w-[90%] mx-auto '>
+      <div class='flex items-center justify-between  w-[90%] mx-auto '>
         <img src={GoldenCityLogo} alt='Golden-City' class='w-[199px] h-8 md:ml-14'/>
         <ul className='flex space-x-14'>
           {navItems.map(item => (
@@ -40,16 +39,16 @@ const Navbar = () => {
               : ' text-[#753FF6] font-medium font-poppins text-[30px]'
             }`}
             >
-            <Link 
-              to={item.path} 
-              className=' '>
-              {item.label}
-            </Link>
+              <Link 
+                to={item.path} 
+                className=' '>
+                {item.label}
+              </Link>
 
-            </li>
-          ))}
-        </ul>
-    </div>
+              </li>
+            ))}
+          </ul>
+      </div>
     </div>
     </>
   );

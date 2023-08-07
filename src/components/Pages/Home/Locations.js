@@ -3,6 +3,7 @@ import LocationImg from '../../Assets/location.JPG'
 import LocationImg1 from '../../Assets/location1.svg'
 import LocationImg2 from '../../Assets/location2.svg'
 
+import './Home.css'
 const Location = () => {
 
     const LocationData_ = [
@@ -10,7 +11,7 @@ const Location = () => {
             id: 1,
             img: LocationImg ,
             location: (
-              <div className=' flex font-poppins text-[28px] space-x-2 p-3'>
+              <div className=' flex font-poppins text-[28px] space-x-2'>
                 <p className=''>Abuja,</p>
                 <span className='text-[#989898]'>Nigeria</span> 
               </div>
@@ -21,7 +22,7 @@ const Location = () => {
           id: 2,
           img: LocationImg1,
           location: (
-            <div className=' flex font-poppins text-[28px] space-x-2 p-3'>
+            <div className=' flex font-poppins text-[28px] space-x-2 '>
               <p className=''>Lagos,</p>
               <span className='text-[#989898]'>Nigeria</span> 
             </div>
@@ -32,7 +33,7 @@ const Location = () => {
         id: 3,
         img: LocationImg2 ,
         location: (
-          <div className=' flex font-poppins text-[28px] space-x-2 p-3'>
+          <div className=' flex font-poppins text-[28px] space-x-2 '>
             <p className=''>Port Harcout,</p>
             <span className='text-[#989898]'>Nigeria</span> 
           </div>
@@ -52,7 +53,7 @@ const Location = () => {
               LocationData_.map(elem => (
                 <li 
                   key={elem.id} 
-                  className='w-[26.8125rem] h-[560px] border border-[#989898] rounded-md'
+                  className='w-[26.8125rem] h-[560px]  rounded-md location'
                 >
                   <div className=' w-full '>
                     <div className="w-full h-[60%]">
@@ -63,10 +64,12 @@ const Location = () => {
                       />
                     </div>
 
-                    <div>{elem.location}</div>
-                    <button className='w-150px h-50px bg-[#753FF6] text-22px ml-auto mt-7 mr-5 text-white flex items-center justify-center rounded-lg' style={{ boxShadow: '0 0 0px rgba(0, 0, 0, 0.1)' }}>
-                      {elem.btn}
-                    </button>
+                    <div className='border border-[#989898] rounded-md  pb-10 px-5 -mt-2'>
+                      <div className='py-5'>{elem.location}</div>
+                      <button className='w-150px h-50px bg-[#753FF6] text-22px ml-auto mt-7  text-white flex items-center justify-center rounded-lg' style={{ boxShadow: '0 0 0px rgba(0, 0, 0, 0.1)' }}>
+                        {elem.btn}
+                      </button>
+                    </div>
                   </div>
 
                 </li>
