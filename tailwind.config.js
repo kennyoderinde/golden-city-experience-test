@@ -46,7 +46,7 @@ module.exports = {
         '171': '171px',
         '42px' : '42px',  //location input in home pg
         '114px' : '114px',  //location input in home pg
-        '560px' : '560px',
+        '35rem' : '35rem',
         '380px' : '380px',
         '50px' : '50px',  //Location section btn
         '15.5625rem' : '15.5625rem', //recently added

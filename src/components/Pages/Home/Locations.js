@@ -47,13 +47,14 @@ const Location = () => {
           <p className=' text-5xl text-[#753FF6] font-semibold'>Our Locations</p>
           <span className=' text-4xl leading-loose'>We are available in different cities across the country.</span>
         </div>
-        <div className="mt-8 mb-12 w-full max-w-[92.2%] flex mx-auto">
-          <ul className=' flex mt-24 space-x-20 mx-auto '>
+        
+        <div className="mt-8 mb-12 w-full max-w-[92.2%] flex flex-row flex-wrap mx-auto justify-center">
+          <ul className=' flex flex-row mt-24 space-x-20 mx-auto '>
             {
               LocationData_.map(elem => (
                 <li 
                   key={elem.id} 
-                  className='w-[26.8125rem] h-[560px]  rounded-md location'
+                  className='w-[26.8125rem] h-[35rem]  rounded-md location'
                 >
                   <div className=' w-full '>
                     <div className="w-full h-[60%]">

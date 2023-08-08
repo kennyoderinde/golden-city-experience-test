@@ -134,7 +134,7 @@ const RecentlyAdded = () => {
                     RecentAdded_.map(item => (
                         <li 
                         key={item.id} 
-                        className=' w-[44.0625rem] h-[15.5625rem] border border-gray-400 flex justify-center rounded-xl '
+                        className=' w-auto h-auto border border-gray-400 flex justify-center rounded-xl py-6 '
                         style={{ boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)' }} 
                         >
                             <div className='flex items-center space-x-8 '>

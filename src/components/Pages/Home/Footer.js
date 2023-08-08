@@ -26,8 +26,9 @@ const Footer = () => {
         <div className=' w-300px h-70px bg-[#753FF6] flex space-x-6 justify-center items-center rounded-full'>
             <img src={LinkedIn} alt='' className=' w-11 h-11 '/>
             <img src={Twitter} alt='' className=' w-11 h-11 '/>
-            <img src={Facebook} alt='' className=' w-11 h-11 '/>
             <img src={Instagram} alt='' className=' w-11 h-11 '/>
+            <img src={Facebook} alt='' className=' w-11 h-11 '/>
+
         </div>
         <span>© 2022. All rights reserved</span>
 

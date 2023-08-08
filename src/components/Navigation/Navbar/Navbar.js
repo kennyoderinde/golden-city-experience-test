@@ -36,7 +36,7 @@ const Navbar = () => {
             className={`cursor-pointer font-poppins whitespace-nowrap ${
               activeItem === item.path
               ? 'text-[#753FF6] font-bold font-poppins text-[30px]'
-              : ' text-[#753FF6] font-medium font-poppins text-[30px]'
+              : 'text-[#753FF6] font-medium font-poppins text-[30px]'
             }`}
             >
               <Link 
@@ -45,7 +45,7 @@ const Navbar = () => {
                 {item.label}
               </Link>
 
-              </li>
+            </li>
             ))}
           </ul>
       </div>
