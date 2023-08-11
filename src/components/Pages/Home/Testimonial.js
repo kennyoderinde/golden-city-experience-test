@@ -28,7 +28,7 @@ const Testimonial = () => {
             <span className='text-4xl leading-loose'>What our clients have to say</span>
         </div>
         <div className='-mt-4 mb-12 max-w-[92.2rem] flex mx-auto'>
-            <ul className='flex mt-24 space-x-16 mb-12'>
+            <ul className='sm:flex mt-24 space-x-16 mb-12'>
             {TestimonialData_.map(value => (
                 <li key={value.id}>
                 <div className='w-auto h-331px border border-[#989898] rounded-md font-poppins flex flex-col'>

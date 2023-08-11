@@ -1,5 +1,5 @@
 import React from 'react'
-import LocationImg from '../../Assets/location.JPG'
+import LocationImg from '../../Assets/new-house.svg'
 import LocationImg1 from '../../Assets/location1.svg'
 import LocationImg2 from '../../Assets/location2.svg'
 
@@ -42,19 +42,19 @@ const Location = () => {
     },
     ]
   return (
-      <div className='mt-24 mb-12 w-full'>
-        <div className=' font-poppins text-center '>
+      <div className='mt-10 mb-4 w-full sm:p-20 p-2'>
+        <div className=' font-poppins text-center border  flex flex-col mx-auto w-auto space-y-3 '>
           <p className=' text-5xl text-[#753FF6] font-semibold'>Our Locations</p>
-          <span className=' text-4xl leading-loose'>We are available in different cities across the country.</span>
+          <span className=' text-4xl sm:leading-loose leading-normal'>We are available in different cities across the country.</span>
         </div>
         
-        <div className="mt-8 mb-12 w-full max-w-[92.2%] flex flex-row flex-wrap mx-auto justify-center">
-          <ul className=' flex flex-row mt-24 space-x-20 mx-auto '>
+        <div className="mt-8 mb-12 w-full sm:max-w-[92.2%] flex sm:flex-row flex-col flex-wrap mx-auto justify-center">
+          <ul className=' flex sm:flex-row flex-col mt-24 space-x-24 mx-auto '>
             {
               LocationData_.map(elem => (
                 <li 
                   key={elem.id} 
-                  className='w-[26.8125rem] h-[35rem]  rounded-md location'
+                  className='w-auto h-auto  rounded-md location'
                 >
                   <div className=' w-full '>
                     <div className="w-full h-[60%]">

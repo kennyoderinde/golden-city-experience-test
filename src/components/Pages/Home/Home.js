@@ -38,10 +38,10 @@ const Home = () => {
     <>
     <div className=''>
       <div className=' flex justify-center'>
-        <div className=' h-full'>
-          <img src={HomeBgImg} alt=''className=' w-full h-full '/>
+        <div className=' h-full flex flex-col justify-center'>
+          <img src={HomeBgImg} alt=''className='w-full h-full'/>
 
-          <div className=' -mt-38rem ml-20 text-white font-poppins flex flex-col space-y-5 mb-20'>
+          <div className=' sm:-mt-38rem -mt-23rem ml-20 text-white font-poppins flex flex-col space-y-5 mb-20'>
             <p className='w-8/12 text-6xl font-bold leading-snug '>The finest properties brought easily to you</p>
             <span className=' w-5/12 text-[28px] font-normal leading-normal '>We provide a complete service for the sale,
                 purchase or rental of real estate.
@@ -49,12 +49,12 @@ const Home = () => {
           </div>
 
             {/* note */}
-          <div className=' z-0 relative left-20 w-[984px] h-[171px] bg-white shadow-md rounded-2xl flex flex-row ' style={{ boxShadow: '0 0 20px rgba(0, 0, 0, 0.2)' }}>
+          <div className=' z-0 relative left-20 w-auto h-auto bg-white shadow-md rounded-2xl flex flex-row mr-auto px-2 pr-6 py-4 ' style={{ boxShadow: '0 0 20px rgba(0, 0, 0, 0.2)' }}>
             
             {/* part one */}
-            <div className='flex flex-col'>
+            <div className='flex flex-col justify-center space-y-10 sm:space-y-0 -mt-2'>
               {/* first   */}
-              <div className='flex space-x-7'>
+              <div className='flex sm:flex-row flex-col  space-x-7'>
                 {/* REnt dropdown */}
                 <div className='flex space-x-4 w-120px h-42px bg-[#F4F4F4] rounded-2xl mt-6 ml-7 items-center justify-center' style={{ boxShadow: '0 0 0px rgba(0, 0, 0, 0.2)' }}>
                   <img src={HomeIcon} alt='down-arrow' className=' w-4 h-4'/>
@@ -69,7 +69,7 @@ const Home = () => {
 
                 {/* House dropdown */}
 
-                <div className='flex space-x-4 w-158px h-42px bg-[#F4F4F4] rounded-2xl mt-6  items-center justify-center' style={{ boxShadow: '0 0 2px rgba(0, 0, 0, 0.2)' }}>
+                <div className='flex space-x-4 w-158px h-42px bg-[#F4F4F4] rounded-2xl mt-7  items-center justify-center' style={{ boxShadow: '0 0 2px rgba(0, 0, 0, 0.2)' }}>
                   <img src={HouseIcon} alt='down-arrow' className=' w-4 h-4'/>
                   <span className='font-poppins text-base font-medium'>House</span>
                   <img src={DownArrow} alt='down-arrow' className='w-3 h-3'/>
@@ -77,7 +77,7 @@ const Home = () => {
               </div>
 
               {/*  second  */}
-              <div className='flex space-x-7'>
+              <div className='flex sm:flex-row flex-col space-x-7 '>
                 {/* Price dropdown */}
                 <div className='mt-3 ml-7 font-poppins '>
                   <p className='font-medium'>Price Range</p>
@@ -148,10 +148,10 @@ const Home = () => {
 
         </div>
 
-        <div className='mt-28'>
+        {/* <div className='mt-28'>
           <Footer />
 
-        </div>
+        </div> */}
     </div>
 
     </>

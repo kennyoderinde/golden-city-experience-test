@@ -18,7 +18,7 @@ const RecentlyAdded = () => {
         {
             id: 1,
             img: Recentpic1,
-            address: '13 Ramat ose, Ogudu GRA, Ikeja.',
+            address: '13 Ramat Ose, Ogudu GRA, Ikeja.',
             bedroom: '4 Bedroom',        
             bedIcon: Bed,              
             
@@ -121,52 +121,52 @@ const RecentlyAdded = () => {
     <>
     <div className=' mb-14'>
         <div className='flex w-[88%]  mx-auto px-4'>
-            <div className=' flex w-full font-poppins  items-center justify-between mb-8   '>
+            <div className=' flex flex-wrap w-full font-poppins  items-center mx-auto space-x-96 mb-8     '>
                 <p className=' text-4xl font-semibold '>Recently Added</p>
-                <span className=' text-2xl text-[#753FF6] font-semibold '>See all</span>
+                <p className=' text-end text-2xl text-[#753FF6] font-semibold ml-60 '>See all</p>
             </div>
         </div>
 
 
-        <div className=' flex w-[92.2%] mx-auto'>
-            <ul className=' container grid grid-cols-2 gap-14 w-full max-w-[92.2rem] mx-auto'>
+        <div className=' flex sm:w-full w-full mx-auto'>
+            <ul className=' container grid sm:grid-cols-2 gap-14 w-auto h-auto sm:max-w-[92.2rem] mx-auto justify-center '>
                 {
                     RecentAdded_.map(item => (
                         <li 
                         key={item.id} 
-                        className=' w-auto h-auto border border-gray-400 flex justify-center rounded-xl py-6 '
+                        className=' sm:w-auto sm:h-auto border border-gray-400 flex justify-center rounded-xl  '
                         style={{ boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)' }} 
                         >
-                            <div className='flex items-center space-x-8 '>
-                                <img src={item.img} alt='Recently Added Pic' className=' w-191px h-191px'/>
+                            <div className='flex items-center space-x-7 '>
+                                <img src={item.img} alt='Recently Added Pic' className=' w-auto h-auto p-7'/>
                                 <div className=' font-poppins space-y-4'>
-                                    <p className=' text-28px font-bold w-369px leading-snug'>{item.address}</p>
+                                    <p className=' text-28px font-bold  leading-snug pr-14'>{item.address}</p>
 
                                     <div className=' flex space-x-8  '>
                                         <div className=' flex space-x-6 items-center'>
-                                            <div className=' w-11 h-11 border border-[#753ff6] rounded-full flex justify-center items-center'>
-                                                < img src= {item.bedIcon} alt='Icons' className=' w-6 h-6'/> 
+                                            <div className=' w-auto h-auto p-2 border border-[#753ff6] rounded-full flex justify-center items-center'>
+                                                < img src= {item.bedIcon} alt='Icons' className=' w-auto h-auto'/> 
                                             </div>
                                             <span className=' text-base text-gray-500 font-poppins font-medium '> {item.bedroom} </span>
                                         </div>
 
                                         <div className=' flex space-x-6 items-center'>
-                                            <div className=' w-11 h-11 border border-[#753ff6] rounded-full flex justify-center items-center'>
-                                                < img src= {item.bathIcon} alt='Icons' className=' w-6 h-6'/>
+                                            <div className=' w-auto h-auto p-2 border border-[#753ff6] rounded-full flex justify-center items-center'>
+                                                < img src= {item.bathIcon} alt='Icons' className=' w-auto h-auto'/>
                                             </div>
                                             <span className=' text-base text-gray-500 font-poppins font-medium '> {item.bathroom}</span>
                                         </div>
                                     </div>
 
-                                    <div className=' flex space-x-36  '>
+                                    <div className=' flex justify-between  '>
                                         <div className=' flex space-x-6 items-center'>
-                                            <div className=' w-11 h-11 border border-[#753ff6] rounded-full flex justify-center items-center'>
-                                                < img src= {item.toiletIcon} alt='Icons' className=' w-6 h-6'/>
+                                            <div className=' w-auto h-auto p-2 border border-[#753ff6] rounded-full flex justify-center items-center'>
+                                                < img src= {item.toiletIcon} alt='Icons' className=' w-auto h-auto'/>
                                             </div>
                                             <span className=' text-base text-gray-500 font-poppins font-medium '> {item.toilet}</span>
                                         </div>
                                         
-                                        <button className=' w-121px h-41px rounded-lg bg-[#753ff6] text-white font-bold '>{item.btn}</button>
+                                        <button className=' w-auto h-auto py-2 px-4 rounded-lg bg-[#753ff6] text-white font-bold mr-8 '>{item.btn}</button>
                                     </div>
                                 </div>
                             </div>
