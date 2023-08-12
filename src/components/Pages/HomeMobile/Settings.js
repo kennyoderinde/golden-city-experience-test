@@ -39,13 +39,13 @@ const Settings = () => {
                 </div> 
                 <div className='flex flex-row justify-center mx-auto space-x-5 '>
                     {/* REnt dropdown */}
-                    <div className='flex space-x-4 w-full px-6 py-3 h-full bg-[#F4F4F4] rounded-2xl items-center' style={{ boxShadow: '0 0 0px rgba(0, 0, 0, 0.2)' }}>
+                    <div className='flex space-x-4 w-full px-6 py-2  h-full bg-[#F4F4F4] rounded-2xl items-center' style={{ boxShadow: '0 0 0px rgba(0, 0, 0, 0.2)' }}>
                         <img src={HomeIcon} alt='down-arrow' className=' w-5 h-5'/>
                         <span className='font-poppins text-lg font-medium'>Rent</span>
                         <img src={DownArrow} alt='down-arrow' className='w-5 h-5'/>
                     </div>
 
-                    <div className='flex space-x-2 w-full px-3 py-3 h-full bg-[#F4F4F4] rounded-2xl items-center' style={{ boxShadow: '0 0 2px rgba(0, 0, 0, 0.2)' }}>
+                    <div className='flex space-x-2 w-full px-3 py-2 h-full bg-[#F4F4F4] rounded-2xl items-center' style={{ boxShadow: '0 0 2px rgba(0, 0, 0, 0.2)' }}>
                         <img src={HouseIcon} alt='down-arrow' className=' w-5 h-5'/>
                         <span className='font-poppins text-lg font-medium '>House</span>
                         <img src={DownArrow} alt='down-arrow' className='w-5 h-5'/>
@@ -60,7 +60,7 @@ const Settings = () => {
                     {/* Price dropdown */}
                     <div className='mt-10 ml-7 font-poppins '>
                     <p className='font-medium text-lg'> Price Range</p>
-                    <div className='flex space-x-4 w-full h-42 px-6 p-3   mt-1 bg-[#F4F4F4] rounded-2xl  items-center justify-center' style={{ boxShadow: '0 0 2px rgba(0, 0, 0, 0.2)' }}>
+                    <div className='flex space-x-4 w-full h-42 px-6 p-2    mt-1 bg-[#F4F4F4] rounded-2xl  items-center justify-center' style={{ boxShadow: '0 0 2px rgba(0, 0, 0, 0.2)' }}>
                         <img src={DollarIcon} alt='down-arrow' className=' w-5 h-5'/>
                         <span className='font-poppins text-sm font-medium'>USD</span>
                         <img src={DownArrow} alt='down-arrow' className='w-5 h-5'/>
@@ -69,7 +69,7 @@ const Settings = () => {
 
 
                 {/* House dropdown */}
-                <div className='flex space-x-2 w-158px h-49px py-2 bg-[#F4F4F4] rounded-2xl mt-70px items-center justify-center' style={{ boxShadow: '0 0 2px rgba(0, 0, 0, 0.2)' }}>
+                <div className='flex space-x-2 w-158px h-49px py-1 bg-[#F4F4F4] rounded-2xl mt-70px items-center justify-center' style={{ boxShadow: '0 0 2px rgba(0, 0, 0, 0.2)' }}>
                   <img src={BlockIcon} alt='down-arrow' className=' w-5 h-5'/>
                   <span className='font-poppins text-lg font-medium'>3 Rooms</span>
                   <img src={DownArrow} alt='down-arrow' className='w-5 h-5'/>
