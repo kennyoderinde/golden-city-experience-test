@@ -14,6 +14,7 @@ import Locations from './Locations'
 import RecentlyAdded from './RecentlyAdded'
 import Testimonial from './Testimonial'
 import Footer from './Footer'
+import HomeMobile from '../../Pages/HomeMobile/HomeMobile'
 
 
 const Home = () => {
@@ -36,10 +37,15 @@ const Home = () => {
 
   return (
     <>
-    <div className=''>
+    <div className='sm:hidden'>
+      <HomeMobile />
+    </div>
+    <div className='sm:flex sm:flex-col hidden '>
       <div className=' flex justify-center'>
         <div className=' h-full flex flex-col justify-center'>
-          <img src={HomeBgImg} alt=''className='w-full h-full'/>
+          <div className=''>
+            <img src={HomeBgImg} alt=''className='w-full h-full'/>
+          </div>
 
           <div className=' sm:-mt-38rem -mt-23rem ml-20 text-white font-poppins flex flex-col space-y-5 mb-20'>
             <p className='w-8/12 text-6xl font-bold leading-snug '>The finest properties brought easily to you</p>
@@ -49,7 +55,7 @@ const Home = () => {
           </div>
 
             {/* note */}
-          <div className=' z-0 relative left-20 w-auto h-auto bg-white shadow-md rounded-2xl flex flex-row mr-auto px-2 pr-6 py-4 ' style={{ boxShadow: '0 0 20px rgba(0, 0, 0, 0.2)' }}>
+          <div className=' z-0 hidden relative left-20 w-auto h-auto bg-white shadow-md rounded-2xl sm:flex flex-row mr-auto px-2 pr-6 py-4 ' style={{ boxShadow: '0 0 20px rgba(0, 0, 0, 0.2)' }}>
             
             {/* part one */}
             <div className='flex flex-col justify-center space-y-10 sm:space-y-0 -mt-2'>

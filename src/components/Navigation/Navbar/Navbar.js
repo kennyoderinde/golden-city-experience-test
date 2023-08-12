@@ -30,9 +30,9 @@ const Navbar = () => {
 
   return (
     <>
-    <header class='bg-white fixed top-0 z-20 flex justify-center w-full h-[100px] border-b border-black px-4'>
-      <div class=' sm:flex items-center justify-between  w-[90%] mx-auto '>
-        <img src={GoldenCityLogo} alt='Golden-City' class='sm:w-[199px] sm:h-8 w-full h-full sm:p-0 p-4 -ml-60  sm:-ml-12'/>
+    <header class='bg-white fixed top-0 z-20 flex justify-center w-full sm:h-[100px] border-b border-black px-4'>
+      <div class='flex items-center sm:justify-between  sm:w-[90%] mx-auto '>
+        <img src={GoldenCityLogo} alt='Golden-City' class='sm:w-[199px] sm:h-8 w-full h-full sm:p-0 p-1   sm:-ml-12'/>
         <ul className='hidden sm:flex space-x-14'>
           {navItems.map(item => (
             <li 
@@ -56,8 +56,8 @@ const Navbar = () => {
       </div>
 
       <div 
-        onClick={() => setNav (!nav)} className=' z-20 cursor-pointer mt-6 ml-auto mr-20 md:hidden'>
-          { nav ?  <FaTimes className='text-gray-600 w-20 h-16'/> : <FaAlignJustify className=' text-gray-600 w-20 h-16' />}
+        onClick={() => setNav (!nav)} className=' z-20 cursor-pointer  ml-auto mr-4 sm:hidden flex items-center p-4 '>
+          { nav ?  <FaTimes className='text-gray-600 w-12 h-12 p-2'/> : <FaAlignJustify className=' text-gray-600 w-12 h-12 p-2' />}
       </div>
 
       { nav && (

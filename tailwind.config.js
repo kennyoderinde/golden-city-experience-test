@@ -23,6 +23,7 @@ module.exports = {
         '984' : '984px',
         '120px' : '120px',  //rent dropdown in home pg
         '438px' : '438px' , //location input in home pg
+        '310px' : '310px', // location input in home mobile
         '158px' : '158px',  //house dropdown in home pg
         '2px' : '2px',
         '104px' : '104px',
@@ -44,7 +45,7 @@ module.exports = {
       height: {
         '100': '100px',
         '171': '171px',
-        '42px' : '42px',  //location input in home pg
+        '49px' : '49px',  //location input in home pg
         '114px' : '114px',  //location input in home pg
         '35rem' : '35rem',
         '380px' : '380px',
@@ -72,6 +73,7 @@ module.exports = {
 
       spacing: {
         '23rem': '23rem', // space btw golden logo and nav items 
+        '12rem': '12rem',
         '38rem': '38rem',
         '35rem' : '35rem',   //recently added
         '116px': '116px',
@@ -79,6 +81,7 @@ module.exports = {
         '27rem': '27rem',
         '57rem': '57rem',
         '50rem': '50rem',
+        '70px': '70px',
 
 
 
