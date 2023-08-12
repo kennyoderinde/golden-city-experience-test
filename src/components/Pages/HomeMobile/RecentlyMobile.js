@@ -147,9 +147,9 @@ const RecentlyAdded = () => {
                                     </div>
                                 </div>
                                 
-                                <div className=' relative font-poppins w-full h-full space-y-4 mx-auto left-3 top-9'>
+                                <div className=' relative font-poppins w-full h-full space-y-1 mx-auto left-3 top-9'>
 
-                                    <div className=' flex flex-col space-y-4   '>
+                                    <div className=' flex flex-col space-y-1   '>
                                         <div className=' flex space-x-3 items-center '>
                                             <div className=' w-auto h-auto p-2  border border-[#753ff6] rounded-full flex justify-center items-center'>
                                                 < img src= {item.bedIcon} alt='Icons' className=' w-auto h-auto'/> 

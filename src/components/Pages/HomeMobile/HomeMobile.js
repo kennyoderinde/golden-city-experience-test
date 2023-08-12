@@ -79,6 +79,7 @@ import Settings from './Settings'
 import SuccessReport from '../Home/SuccessReport'
 import LocationsMobile from '../HomeMobile/LocationsMobile'
 import RecentlyMobile from './RecentlyMobile'
+import TestimonialMobile from './TestimonialMobile'
 
 const HomeMobile = () => {
   return (
@@ -91,7 +92,7 @@ const HomeMobile = () => {
 
         <div className='  -mt-12rem text-white font-poppins flex flex-col space-y-3 mb-5 px-10 '>
           <p className='w-auto text-3xl font-bold  '>The finest properties brought easily to you</p>
-          <span className=' w-auto text-lg font-normal leading-normal '>We provide a complete service for the sale,
+          <span className=' w-auto text-lg font-normal leading-tight '>We provide a complete service for the sale,
               purchase or rental of real estate.
           </span>
         </div>
@@ -101,6 +102,7 @@ const HomeMobile = () => {
       <SuccessReport />
       <LocationsMobile />
       <RecentlyMobile />
+      <TestimonialMobile/>
       
 
 
