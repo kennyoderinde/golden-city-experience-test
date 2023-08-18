@@ -42,14 +42,14 @@ const Location = () => {
     },
     ]
   return (
-      <div className='mt-10 mb-4 w-full lg:p-20 p-2'>
+      <div className='mt-10 mb-4 w-full md:p-4 p-2'>
         <div className=' font-poppins text-center border  flex flex-col mx-auto w-auto space-y-3 '>
           <p className=' text-5xl text-[#753FF6] font-semibold'>Our Locations</p>
           <span className=' text-4xl sm:leading-loose leading-normal'>We are available in different cities across the country.</span>
         </div>
         
-        <div className="mt-8 mb-12 w-full sm:max-w-[92.2%] flex sm:flex-row flex-col flex-wrap mx-auto justify-center">
-          <ul className=' flex sm:flex-row flex-col mt-24 space-x-24 mx-auto '>
+        <div className="mt-8 mb-12 w-full md:max-w-full flex sm:flex-row flex-col flex-wrap mx-auto justify-center">
+          <ul className=' flex sm:flex-row flex-col mt-24 md:space-x-3 lg:space-x-20 mx-auto '>
             {
               LocationData_.map(elem => (
                 <li 
