@@ -32,7 +32,7 @@ const Navbar = () => {
     <>
     <header class='bg-white fixed top-0 z-20 flex justify-center w-full sm:h-[100px] border-b border-black px-4'>
       <div class='flex items-center sm:justify-between  sm:w-[90%] mx-auto '>
-        <img src={GoldenCityLogo} alt='Golden-City' class='sm:w-[199px] sm:h-8 w-full h-full sm:p-0 p-1   sm:-ml-12'/>
+        <img src={GoldenCityLogo} alt='Golden-City' class='lg:w-[199px] md:w-48 md:h-12 sm:h-8 w-full h-full sm:p-0 p-1 sm:-ml-12 md:-ml-4'/>
         <ul className='hidden sm:flex space-x-14'>
           {navItems.map(item => (
             <li 
@@ -40,8 +40,8 @@ const Navbar = () => {
             onClick={() => handleOptionClick(item.path)}
             className={`cursor-pointer font-poppins whitespace-nowrap ${
               activeItem === item.path
-              ? 'text-[#753FF6] font-bold font-poppins text-[30px]'
-              : 'text-[#753FF6] font-medium font-poppins text-[30px]'
+              ? 'text-[#753FF6] font-bold font-poppins lg:text-[30px] md:text-lg'
+              : 'text-[#753FF6] font-medium font-poppins lg:text-[30px]  md:text-lg'
             }`}
             >
               <Link 

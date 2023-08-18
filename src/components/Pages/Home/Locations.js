@@ -11,7 +11,7 @@ const Location = () => {
             id: 1,
             img: LocationImg ,
             location: (
-              <div className=' flex font-poppins text-[28px] space-x-2'>
+              <div className=' flex font-poppins lg:text-[28px] md:text-xl space-x-2'>
                 <p className=''>Abuja,</p>
                 <span className='text-[#989898]'>Nigeria</span> 
               </div>
@@ -22,7 +22,7 @@ const Location = () => {
           id: 2,
           img: LocationImg1,
           location: (
-            <div className=' flex font-poppins text-[28px] space-x-2 '>
+            <div className=' flex font-poppins lg:text-[28px] md:text-xl space-x-2 '>
               <p className=''>Lagos,</p>
               <span className='text-[#989898]'>Nigeria</span> 
             </div>
@@ -33,7 +33,7 @@ const Location = () => {
         id: 3,
         img: LocationImg2 ,
         location: (
-          <div className=' flex font-poppins text-[28px] space-x-2 '>
+          <div className=' flex font-poppins lg:text-[28px] md:text-xl space-x-2 '>
             <p className=''>Port Harcout,</p>
             <span className='text-[#989898]'>Nigeria</span> 
           </div>
@@ -42,7 +42,7 @@ const Location = () => {
     },
     ]
   return (
-      <div className='mt-10 mb-4 w-full sm:p-20 p-2'>
+      <div className='mt-10 mb-4 w-full lg:p-20 p-2'>
         <div className=' font-poppins text-center border  flex flex-col mx-auto w-auto space-y-3 '>
           <p className=' text-5xl text-[#753FF6] font-semibold'>Our Locations</p>
           <span className=' text-4xl sm:leading-loose leading-normal'>We are available in different cities across the country.</span>

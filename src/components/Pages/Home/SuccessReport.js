@@ -29,13 +29,13 @@ const SuccessData_ = [
 
 const Success = () => {
   return (
-    <ul className='flex sm:mt-4 sm:space-x-14 justify-center mx-auto '>
+    <ul className='flex sm:mt-4 md:-mt-12 lg:space-x-14 md:space-x-9 lg:justify-center lg:mx-auto '>
       {SuccessData_.map(item => (
         <li key={item.id} className='flex justify-center'>
           <div className='font-poppins flex sm:space-x-14 '>
             <div className='flex flex-col sm:space-y-5 mt-4 font-poppins'>
-              <p className='sm:text-3xl font-semibold sm:p-0 p-2'>{item.score}</p>
-              <p className='sm:text-3xl text-[#989898] sm:whitespace-nowrap sm:p-0 p-2'>{item.title}</p>
+              <p className='lg:text-3xl md:text-xl font-semibold sm:p-0 p-2'>{item.score}</p>
+              <p className='lg:text-3xl md:text-xl text-[#989898] sm:whitespace-nowrap sm:p-0 p-2'>{item.title}</p>
             </div>
             {item.line !== null && <div className='w-2px sm:h-114px bg-[#753FF6]'>{item.line}</div>}
           </div>

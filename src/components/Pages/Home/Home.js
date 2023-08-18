@@ -40,22 +40,22 @@ const Home = () => {
     <div className='sm:hidden'>
       <HomeMobile />
     </div>
-    <div className='sm:flex sm:flex-col hidden '>
-      <div className=' flex justify-center'>
-        <div className=' h-full flex flex-col justify-center'>
-          <div className=''>
-            <img src={HomeBgImg} alt=''className='w-full h-full'/>
+    <div className='lg:flex lg:flex-col md:flex md:flex-col flex-col '>
+      <div className=' md:flex justify-center mx-auto hidden'>
+        <div className=' h-full md:w-full md:h-full flex flex-col justify-center md:flex md:mx-auto'>
+          <div className=' lg:w-auto mx-auto md:w-full md:h-full md:mx-auto lg:mx-auto md:mt-24'>
+            <img src={HomeBgImg} alt=''className='lg:w-full h-full md:w-full md:full '/>
           </div>
 
-          <div className=' sm:-mt-38rem -mt-23rem ml-20 text-white font-poppins flex flex-col space-y-5 mb-20'>
-            <p className='w-8/12 text-6xl font-bold leading-snug '>The finest properties brought easily to you</p>
-            <span className=' w-5/12 text-[28px] font-normal leading-normal '>We provide a complete service for the sale,
+          <div className=' lg:-mt-38rem -mt-23rem ml-20 text-white font-poppins flex flex-col space-y-5 mb-20'>
+            <p className='lg:w-8/12 md:w-10/12 lg:text-6xl md:text-5xl  font-bold leading-snug '>The finest properties brought easily to you</p>
+            <span className=' lg:w-5/12 md:w-10/12 text-[28px] font-normal leading-normal '>We provide a complete service for the sale,
                 purchase or rental of real estate.
             </span>
           </div>
 
             {/* note */}
-          <div className=' z-0 hidden relative left-20 w-auto h-auto bg-white shadow-md rounded-2xl sm:flex flex-row mr-auto px-2 pr-6 py-4 ' style={{ boxShadow: '0 0 20px rgba(0, 0, 0, 0.2)' }}>
+          <div className=' z-0 hidden relative lg:left-20 w-auto h-auto bg-white shadow-md rounded-2xl sm:flex flex-row mr-auto px-2 pr-6 py-4 ' style={{ boxShadow: '0 0 20px rgba(0, 0, 0, 0.2)' }}>
             
             {/* part one */}
             <div className='flex flex-col justify-center space-y-10 sm:space-y-0 -mt-2'>
@@ -134,22 +134,22 @@ const Home = () => {
 
 
 
-        <div className=' mt-48 mb-10'>
+        <div className=' mt-48 mb-10 md:flex hidden'>
           <SuccessReport />
 
         </div>
 
-        <div className=''>
+        <div className=' md:flex hidden '>
           <Locations />
 
         </div>
 
-        <div className='mt-28'>
+        <div className='mt-'>
           <RecentlyAdded />
 
         </div>
 
-        <div className='mt-32'>
+        <div className='mt-32 md:flex hidden'>
           <Testimonial />
 
         </div>

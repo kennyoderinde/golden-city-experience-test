@@ -119,38 +119,38 @@ const RecentlyAdded = () => {
     ]
   return (
     <>
-    <div className=' mb-14'>
-        <div className='flex w-[88%]  mx-auto px-4'>
-            <div className=' flex flex-wrap w-full font-poppins  items-center mx-auto space-x-96 mb-8     '>
-                <p className=' text-4xl font-semibold '>Recently Added</p>
-                <p className=' text-end text-2xl text-[#753FF6] font-semibold ml-60 '>See all</p>
+    <div className='mb-14'>
+        <div className=''>
+            <div className='px-6 '>
+                <p className=' md:text-4xl text-2xl  font-semibold '>Recently Added</p>
+                <p className=' text-end md:text-2xl text-xl  text-[#753FF6] font-semibold md:ml-40 -mt-4 '>See all</p>
             </div>
         </div>
 
 
-        <div className=' flex sm:w-full w-full mx-auto'>
-            <ul className=' container grid sm:grid-cols-2 gap-14 w-auto h-auto sm:max-w-[92.2rem] mx-auto justify-center '>
+        <div className=''>
+            <ul className=' container lg:grid lg:grid-cols-2 gap-14 w-auto h-auto lg:max-w-[92.2rem] mx-auto justify-center lg:space-y-0 space-y-6'>
                 {
                     RecentAdded_.map(item => (
                         <li 
                         key={item.id} 
-                        className=' sm:w-auto sm:h-auto border border-gray-400 flex justify-center rounded-xl  '
+                        className=' md:w-auto md:h-auto flex justify-center   '
                         style={{ boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)' }} 
                         >
-                            <div className='flex items-center space-x-7 '>
-                                <img src={item.img} alt='Recently Added Pic' className=' w-auto h-auto p-7'/>
-                                <div className=' font-poppins space-y-4'>
-                                    <p className=' text-28px font-bold  leading-snug pr-14'>{item.address}</p>
+                            <div className=' w-9/12 md:w-11/12 md:flex items-center border border-gray-400 md:space-x-6 rounded-xl'>
+                                <img src={item.img} alt='Recently Added Pic' className=' md:w-auto md:h-auto w-full p-7'/>
+                                <div className=' font-poppins md:space-y-6 space-y-3 md:p-2 p-3 -mt-2'>
+                                    <p className=' md:text-2xl font-bold md:text-start text-center  leading-snug pr-14'>{item.address}</p>
 
-                                    <div className=' flex space-x-8  '>
-                                        <div className=' flex space-x-6 items-center'>
+                                    <div className=' flex md:space-x-8 space-x-4  '>
+                                        <div className=' flex md:space-x-6 space-x-2 items-center'>
                                             <div className=' w-auto h-auto p-2 border border-[#753ff6] rounded-full flex justify-center items-center'>
                                                 < img src= {item.bedIcon} alt='Icons' className=' w-auto h-auto'/> 
                                             </div>
                                             <span className=' text-base text-gray-500 font-poppins font-medium '> {item.bedroom} </span>
                                         </div>
 
-                                        <div className=' flex space-x-6 items-center'>
+                                        <div className=' flex  md:space-x-6 space-x-2 items-center'>
                                             <div className=' w-auto h-auto p-2 border border-[#753ff6] rounded-full flex justify-center items-center'>
                                                 < img src= {item.bathIcon} alt='Icons' className=' w-auto h-auto'/>
                                             </div>
@@ -159,7 +159,7 @@ const RecentlyAdded = () => {
                                     </div>
 
                                     <div className=' flex justify-between  '>
-                                        <div className=' flex space-x-6 items-center'>
+                                        <div className=' flex md:space-x-6 space-x-2  items-center'>
                                             <div className=' w-auto h-auto p-2 border border-[#753ff6] rounded-full flex justify-center items-center'>
                                                 < img src= {item.toiletIcon} alt='Icons' className=' w-auto h-auto'/>
                                             </div>

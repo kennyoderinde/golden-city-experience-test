@@ -101,7 +101,7 @@ const HomeMobile = () => {
       <Settings />
       <SuccessReport />
       <LocationsMobile />
-      <RecentlyMobile />
+      {/* <RecentlyMobile /> */}
       <TestimonialMobile/>
       
 
