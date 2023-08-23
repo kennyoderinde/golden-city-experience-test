@@ -8,26 +8,26 @@ import Instagram from '../../Assets/instagram.svg'
 const Footer = () => {
   return (
     <>
-      <div className=''>
-        <div className='flex  w-full space-x-48 mb-7'>
-          <img src={GoldenCityLogo} alt='Golden-City' className='w-[199px] h-8 ml-14'/>
-          <div className=' font-poppins font-bold text-4xl text-[#753FF6] flex space-x-32 '>
+      <div className='md:mt-0 mt-16'>
+        <div className='md:flex  mx-auto  md:w-full w-full lg:space-x-48 md:space-x-16 mb-7 md:flex-none md:flex-row flex flex-col justify-center'>
+          <img src={GoldenCityLogo} alt='Golden-City' className='md:w-[199px] md:h-8 md:ml-14 w-auto h-auto md:px-0 px-24   '/>
+          <div className=' md:w-full w-10/12 font-poppins font-bold lg:text-4xl md:text-2xl text-lg text-[#753FF6] md:flex flex mx-auto lg:space-x-32 md:space-x-10 space-x-6 md:mt-0 mt-6  '>
             <p className= ''>Contact us</p>
-            <p className= ''>Blog</p>
+            <p className= ''>Blog</p> 
             <p className= ''>Testimonials</p>
           </div>
         </div>
       </div>
 
     <div className='flex justify-center'>
-    <div className=' w-[92%] border-b border-gray-500 mb-10 flex justify-center'></div>
+    <div className='hidden md:flex md:w-[92%] border-b border-gray-500 mb-10 justify-center'></div>
     </div>
     <div className='flex flex-col justify-center items-center space-y-8 mb-24'>
-        <div className=' w-300px h-70px bg-[#753FF6] flex space-x-6 justify-center items-center rounded-full'>
-            <img src={LinkedIn} alt='' className=' w-11 h-11 '/>
-            <img src={Twitter} alt='' className=' w-11 h-11 '/>
-            <img src={Instagram} alt='' className=' w-11 h-11 '/>
-            <img src={Facebook} alt='' className=' w-11 h-11 '/>
+        <div className=' w-auto h-70px bg-[#753FF6] md:px-6 md:py-4 px-4 py-3 flex space-x-6 justify-center items-center rounded-full'>
+            <img src={LinkedIn} alt='' className=' md:w-11 w-8 md:h-11 h-8  '/>
+            <img src={Twitter} alt='' className=' md:w-11 w-8 md:h-11 h-8 '/>
+            <img src={Instagram} alt='' className=' md:w-11 w-8 md:h-11  h-8 '/>
+            <img src={Facebook} alt='' className=' md:w-11 w-8 md:h-11  h-8 '/>
 
         </div>
         <span>© 2022. All rights reserved</span>

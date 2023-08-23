@@ -29,7 +29,7 @@ const SuccessData_ = [
 
 const Success = () => {
   return (
-    <ul className='flex sm:mt-4 md:-mt-12 lg:space-x-14 md:space-x-9 lg:justify-center lg:mx-auto '>
+    <ul className='flex sm:mt-4 md:-mt-12 lg:space-x-14 md:space-x-9 lg:justify-center lg:mx-auto md:px-16 lg:px-0 '>
       {SuccessData_.map(item => (
         <li key={item.id} className='flex justify-center'>
           <div className='font-poppins flex sm:space-x-14 '>

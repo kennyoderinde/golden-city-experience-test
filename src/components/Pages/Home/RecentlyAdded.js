@@ -121,9 +121,9 @@ const RecentlyAdded = () => {
     <>
     <div className='mb-14'>
         <div className=''>
-            <div className='px-6 '>
+            <div className='lg:px-32 lg:py-4 md:px-10'>
                 <p className=' md:text-4xl text-2xl  font-semibold '>Recently Added</p>
-                <p className=' text-end md:text-2xl text-xl  text-[#753FF6] font-semibold md:ml-40 -mt-4 '>See all</p>
+                <p className=' text-end md:text-2xl text-xl  text-[#753FF6] font-semibold  -mt-4 '>See all</p>
             </div>
         </div>
 
@@ -135,10 +135,10 @@ const RecentlyAdded = () => {
                         <li 
                         key={item.id} 
                         className=' md:w-auto md:h-auto flex justify-center   '
-                        style={{ boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)' }} 
                         >
-                            <div className=' w-9/12 md:w-11/12 md:flex items-center border border-gray-400 md:space-x-6 rounded-xl'>
-                                <img src={item.img} alt='Recently Added Pic' className=' md:w-auto md:h-auto w-full p-7'/>
+                            <div className=' w-9/12 md:w-11/12 md:flex items-center border border-gray-400 md:space-x-6 rounded-xl' style={{ boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)' }} 
+>
+                                <img src={item.img} alt='Recently Added Pic' className=' md:w-auto md:h-auto w-full p-10'/>
                                 <div className=' font-poppins md:space-y-6 space-y-3 md:p-2 p-3 -mt-2'>
                                     <p className=' md:text-2xl font-bold md:text-start text-center  leading-snug pr-14'>{item.address}</p>
 

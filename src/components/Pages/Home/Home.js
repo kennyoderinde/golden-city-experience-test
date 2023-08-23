@@ -40,10 +40,10 @@ const Home = () => {
     <div className='sm:hidden'>
       <HomeMobile />
     </div>
-    <div className='lg:flex lg:flex-col md:flex md:flex-col flex-col '>
+    <div className='md:flex md:flex-col flex-col justify-center '>
       <div className=' md:flex justify-center mx-auto hidden'>
         <div className=' h-full md:w-full md:h-full flex flex-col justify-center md:flex md:mx-auto'>
-          <div className=' lg:w-auto mx-auto md:w-full md:h-full md:mx-auto lg:mx-auto md:mt-24'>
+          <div className=' md:w-auto mx-auto md:h-full md:mx-auto lg:mx-auto md:mt-24'>
             <img src={HomeBgImg} alt=''className='lg:w-full h-full md:w-full md:full '/>
           </div>
 
@@ -154,10 +154,10 @@ const Home = () => {
 
         </div>
 
-        {/* <div className='mt-28'>
+        <div className='lg:mt-28 md:mt-80'>
           <Footer />
 
-        </div> */}
+        </div>
     </div>
 
     </>
